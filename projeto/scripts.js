@@ -6,15 +6,15 @@ app.controller('QuadradosController', ($scope) => {
     let ultimoQuadradoClicado;
 
     $scope.quadrados = [
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''},
-        {id: '', classe: '', curiosidade:''}
+        {id: 1, classe: '', curiosidade:''},
+        {id: 2, classe: '', curiosidade:''},
+        {id: 3, classe: '', curiosidade:''},
+        {id: 4, classe: '', curiosidade:''},
+        {id: 5, classe: '', curiosidade:''},
+        {id: 6, classe: '', curiosidade:''},
+        {id: 7, classe: '', curiosidade:''},
+        {id: 8, classe: '', curiosidade:''},
+        {id: 9, classe: '', curiosidade:''}
     ];
     
     $scope.ativar = (quadrado) => {

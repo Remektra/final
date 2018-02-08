@@ -32,7 +32,7 @@
 
 			 
 			 
-			<input class="botao" type="button" value="Cadastrar-se" ng-click="verificar(nomeCompleto, senha)">
+			<input class="botao" type="button" value="Cadastrar-se" ng-click="verificar(nomeCompleto, usuario)">
 			
 
 		</div>
@@ -47,13 +47,16 @@
 
 		app.controller('CadastroController', ($scope, $window) => {
 
-			$scope.verificar = (nomeCompleto, senha) =>{
-				if((nomeCompleto == 'Astro') && (senha == 'senha')){
+			$scope.verificar = (nomeCompleto, usuario) =>{
+				if((nomeCompleto != null) && (usuario != null)){
 					console.log('ok');
 					// $location.path('../menuLateral/principal.html');
 					$window.location.href = '../menuLateral/principal.html';
 				}else{
-					$scope.alerta = alert('Preencha Nome Completo e senha.');
+					$scope.alerta = alert('Preencha todos os campos.');										
+					console.log('else');
+					// $window.location.href = '../menuLateral/principal.html';
+					
 				} 
 			}
 
